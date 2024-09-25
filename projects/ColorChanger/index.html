@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorChanger</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: #dbd2d2;
+        }
+        h1,h2{
+        text-align: center;
+       }
+       h1{
+        text-transform: capitalize;
+        text-shadow: 2px 1px 3px #282828;
+        color: #ffffff;
+        font-size: 45px;
+       }
+       h2{
+        color: #2a2525;
+        font-size: 25px;
+       }
+       .main_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vh - 10%);
+       }
+       .btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+       }
+       .button{
+        background-color: azure;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 3px solid rgb(74, 69, 69);
+       }
+       #gray{
+        background-color: gray;
+       }
+       #white{
+        background-color: white;
+       }
+       #blue{
+        background-color: blue;
+       }
+       #yellow{
+        background-color: yellow;
+       }
+       #green{
+        background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1>Color Scheme Switcher</h1>
+        <div class="btns">
+            <span class="button" id="gray"></span>
+            <span class="button" id="white"></span>
+            <span class="button" id="blue"></span>
+            <span class="button" id="yellow"></span>
+            <span class="button" id="green"></span>
+        </div>
+        <h2>
+            Try clicking on one of the colors above <br>
+            <span>to change the background color of this page!</span>
+        </h2>
+    </div>
+</body>
+<script>
+    const body=document.querySelector("body")
+    const buttons=document.querySelectorAll(".button");
+
+    
+    buttons.forEach(function(button){
+        // console.log(button)
+        button.addEventListener('click',function(e){
+            // console.log(e);
+            // console.log(e.target);
+            if(e.target.id == "gray"){
+                // body.style.backgroundColor="gray"
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id == "white"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id == "blue"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id == "yellow"){
+                body.style.backgroundColor=e.target.id
+            } 
+            if(e.target.id == "green"){
+                body.style.backgroundColor=e.target.id
+            } 
+        })
+    })
+</script>
+</html>
