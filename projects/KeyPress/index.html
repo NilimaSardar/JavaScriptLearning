@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press</title>
+</head>
+<body>
+    <div id="insert">
+        <h1>Press the key</h1>
+    </div>
+</body>
+
+<script>
+    const insert = document.getElementById('insert')
+
+    window.addEventListener('keydown',(e)=>{
+        insert.innerHTML=`
+        <table>
+            <tr>
+                <td>key</td>
+                <td>keyCode</td>
+                <td>code</td>
+            </tr>
+             <tr>
+                <td>${e.key === ' '? 'space': e.key}</td>
+                <td>${e.keyCode}</td>
+                <td>${e.code}</td>
+            </tr>
+        </table>
+        `
+    })
+</script>
+</html>
