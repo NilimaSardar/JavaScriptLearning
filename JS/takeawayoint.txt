@@ -1,0 +1,29 @@
+Day 1
+    Js
+        single threaded
+        synchronous
+        blocking language
+    data
+        1, 2, 3.5 => Number
+        "a", "Nilima", "1", "true" => string
+        true , false => boolean
+
+    variable
+        define variable
+        call variable
+
+    comment
+
+    operator
+
+Day 3
+    function
+        function define
+        function call
+        functon execution
+        pass value
+        default value
+        return
+    function
+        without return     fun()
+        with return     let value = fun()
