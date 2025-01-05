@@ -27,3 +27,21 @@ Day 3
     function
         without return     fun()
         with return     let value = fun()
+
+
+    when to use map
+        input and output (both array)
+        and input and output length is same
+        [1,2,3]=[2,3,6] (we can use map)
+        [1,2,3]=[2,3,6,8] (we cannot use map) because output and input length doesnot match
+        ["n","i","l","i"]=>["N","i","l","i"]can use map
+        "nilima"=>["N","i","l","m","a"] can not use map
+        ["N","i","l","m","a"]=>"nilima" can not use map
+
+    when to use filter
+        input and outpu must be array 
+        is used to filter element 
+        ouput elemnt are from the input elemnet
+        [1,2,3]=>[1,2]  can use filter 
+        [1,2,3]=>[4,1] can not use filter 
+        "nitan"=>"nit" can not use filter

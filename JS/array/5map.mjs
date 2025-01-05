@@ -3,10 +3,10 @@
 /* [1, 2, 3] = [11, 12, 13] */
 
 
-let ar1 = [1, 2, 3]
+let ar1 = ["nitan", "nilima", "Ram"]
 
 let ar2 = ar1.map((value, i) =>{
-    return value + 10
+    return `${value} thapa`;
 })
 
 console.log(ar2);
