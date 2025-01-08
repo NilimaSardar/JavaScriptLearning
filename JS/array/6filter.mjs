@@ -20,4 +20,4 @@ let output = input.filter((value, i)=>{
     }
 })
 
-console.log(output);
+console.log(output);//[10,12,4,6,88]
