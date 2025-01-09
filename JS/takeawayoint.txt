@@ -45,3 +45,12 @@ Day 3
         [1,2,3]=>[1,2]  can use filter 
         [1,2,3]=>[4,1] can not use filter 
         "nitan"=>"nit" can not use filter
+
+        Day 6
+            const
+            destructure of array and object
+            export , import
+            setTimeout, setInterval
+            error handling
+            throw error
+            practice of array object
