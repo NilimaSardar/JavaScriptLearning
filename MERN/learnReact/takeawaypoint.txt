@@ -1,0 +1,31 @@
+Day 1
+    Installation and setup
+    Assignment Ternary operator
+
+Day 2
+    component = (custom tag)
+        component is a function whose first letter must be capital
+        it must return only one wrapper
+        call component like calling div, p
+    props
+        value passed to the component is called props
+        pass
+            always pass props in opening tag
+            while passing if props is other than string use {}
+        get
+            while getting always use {}
+
+    inline css
+    
+Day 3
+    useState
+    counter example
+    
+
+Day 4
+    displaying array of object
+    external css
+        define css in ecternal file
+        import css in main file
+        use it
+    
