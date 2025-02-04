@@ -5,6 +5,11 @@ import ArrayOfObject2 from "./displayarray/ArrayOfObject2";
 import HandleImage from "./HandleImage";
 import Info from "./Info";
 import LearnExternalCSS from "./LearnExternalCSS";
+import LearnForm1 from "./learnForm/LearnForm1";
+import LearnForm2 from "./learnForm/LearnForm2";
+import LearnForm3 from "./learnForm/LearnForm3";
+import LearnForm4 from "./learnForm/LearnForm4";
+import LearnForm5 from "./learnForm/LearnForm5";
 import LearnUseState from "./learnUseState/LearnUseState";
 import LearnUseState1 from "./learnUseState/LearnUseState1";
 import LearnUseState3 from "./learnUseState/LearnUseState3";
@@ -31,7 +36,12 @@ const App = () => {
       {/* <ArrayOfObject1/> */}
       {/* <ArrayOfObject2/> */}
       {/* <HandleImage/> */}
-      <LearnExternalCSS/>
+      {/* <LearnExternalCSS/> */}
+      {/* <LearnForm1/> */}
+      {/* <LearnForm2/> */}
+      {/* <LearnForm3/> */}
+      {/* <LearnForm4/> */}
+      <LearnForm5/>
     </div>
   );
 };
