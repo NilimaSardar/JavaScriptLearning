@@ -3,8 +3,7 @@ import React from 'react'
 const LearnForm1 = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log("form is submitted successfully.");
-        
+        console.log("form is submitted successfully.");   
     }
   return (
     <div>

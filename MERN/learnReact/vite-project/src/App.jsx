@@ -10,6 +10,7 @@ import LearnForm2 from "./learnForm/LearnForm2";
 import LearnForm3 from "./learnForm/LearnForm3";
 import LearnForm4 from "./learnForm/LearnForm4";
 import LearnForm5 from "./learnForm/LearnForm5";
+import LearnForm6 from "./learnForm/LearnForm6";
 import LearnUseState from "./learnUseState/LearnUseState";
 import LearnUseState1 from "./learnUseState/LearnUseState1";
 import LearnUseState3 from "./learnUseState/LearnUseState3";
@@ -41,7 +42,8 @@ const App = () => {
       {/* <LearnForm2/> */}
       {/* <LearnForm3/> */}
       {/* <LearnForm4/> */}
-      <LearnForm5/>
+      {/* <LearnForm5/> */}
+      <LearnForm6/>
     </div>
   );
 };
