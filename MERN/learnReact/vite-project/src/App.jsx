@@ -11,6 +11,8 @@ import LearnForm3 from "./learnForm/LearnForm3";
 import LearnForm4 from "./learnForm/LearnForm4";
 import LearnForm5 from "./learnForm/LearnForm5";
 import LearnForm6 from "./learnForm/LearnForm6";
+import LearnForm7 from "./learnForm/LearnForm7";
+import LearnForm8 from "./learnForm/LearnForm8";
 import LearnUseState from "./learnUseState/LearnUseState";
 import LearnUseState1 from "./learnUseState/LearnUseState1";
 import LearnUseState3 from "./learnUseState/LearnUseState3";
@@ -43,7 +45,9 @@ const App = () => {
       {/* <LearnForm3/> */}
       {/* <LearnForm4/> */}
       {/* <LearnForm5/> */}
-      <LearnForm6/>
+      {/* <LearnForm6/> */}
+      {/* <LearnForm7/> */}
+      <LearnForm8/>
     </div>
   );
 };
