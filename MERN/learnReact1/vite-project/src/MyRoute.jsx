@@ -4,6 +4,7 @@ import About from './About'
 import Contact from './Contact'
 import Product from './Product'
 import Login from './Login'
+import DynamicProduct from './DynamicProduct'
 
 const MyRoute = () => {
     //attach page with url
@@ -13,7 +14,11 @@ const MyRoute = () => {
         <Routes>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
-            <Route path="/product" element={<Product/>}></Route>
+            <Route path="/product/item1" element={<Product/>}></Route>
+            <Route 
+              path="/product/:id" 
+              element={<DynamicProduct/>}>
+            </Route>
             <Route path="/login" element={<Login/>}></Route>
         </Routes>
     </div>
