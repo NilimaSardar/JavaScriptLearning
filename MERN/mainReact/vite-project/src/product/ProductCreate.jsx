@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import {toast} from 'react-toastify'
 
 const ProductCreate = () => {
 
@@ -8,7 +9,7 @@ const ProductCreate = () => {
     let [quantity, setQuantity] = useState("");
     let [description, setDescription] = useState("");
 
-    const handleSubmit =(e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();//It is used to prevent deafault behaviour i.e refreash page
 
         let data = {
@@ -21,11 +22,19 @@ const ProductCreate = () => {
         // console.log(data);
 
         //hit api
-        let result = axios({
-            url : "http://localhost:8000/product",
-            method: "POST",
-            data: data,
-        });
+        try {
+            let result = await axios({
+                url : "http://localhost:8000/product",
+                method: "POST",
+                data: data,
+            });
+            toast.success(result.data.message)
+        } catch (error) {            
+            toast.error(error.response.data.message)
+        }
+
+        
+
         
     }
   return (

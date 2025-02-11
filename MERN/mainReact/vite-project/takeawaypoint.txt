@@ -1,0 +1,6 @@
+network pannel
+    header (url,method)
+    payload (data send by frontend)
+    preview (data send by backend)
+
+what does status 404 means
