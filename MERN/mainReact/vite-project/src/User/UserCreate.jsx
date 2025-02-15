@@ -3,21 +3,41 @@ import React, { useState } from 'react'
 const UserCreate = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [password,setPassword] = useState("");
     const [age, setAge] = useState("");
     const [isMarried, setIsMarried] = useState(false);
     const [gender, setGender] = useState("male");
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault();
 
         let data = {
             name: name,
             email: email,
+            password: password,
+            age: age,
             isMarried: isMarried,
             gender: gender,
         }
-        console.log(data);
+        // console.log(data);
+
+        //hit api
+        try {
+            let result = await axios({
+                url : "http://localhost:8000/product",
+                method: "POST",
+                data: data,
+            });
+            toast.success(result.data.message)
+            setName("");
+            setEmail("");
+            setPassword("");
+            setAge("");
+            setIsMarried(false);
+            setGender("");
+        } catch (error) {            
+            toast.error(error.response.data.message)
+        }
         
     }
     

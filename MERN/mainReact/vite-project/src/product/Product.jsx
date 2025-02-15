@@ -48,8 +48,27 @@ const Product = () => {
                 navigate(`/product/${item._id}`);
               }}
             >View</button>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button
+              onClick={()=>{
+                navigate(`/product/update/${item._id}`);
+              }}
+            >Edit</button>
+            <button
+              onClick ={async()=>{
+                
+                try {
+                  let result = await axios({
+                    url: `http://localhost:8000/product/${item._id}`,
+                    method: "delete",
+                  });
+                  toast.success(result.data.message);
+                  getData();
+                } catch (error) {
+                  toast.error(error.response.data.message);
+                }
+
+              }}
+            >Delete</button>
           </div>
         )
       })}
